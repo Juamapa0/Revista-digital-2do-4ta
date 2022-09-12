@@ -120,9 +120,11 @@ header {
         justify-content: center;
         justify-items: center;
         text-align: center;
+        font-weight: 900;
      }
      .pages {
         display:flex;
+        flex-direction: row;
         justify-content: center;
         justify-items: center;
         justify-self: center;
@@ -131,13 +133,21 @@ header {
         height: 80px;
         
      }
+     .page li{
+        display:flex;
+        justify-content: center;
+        width:150px;
+        height: 80px;
+        padding:0;
+     }
      .pages li a{
         text-decoration: none;
         padding: 5px 15px;
         color :white;
-        background-color: blueviolet;
+        background-color: #513cff;
         margin:28px;
         width:150;
-        height: 80px;
+        height: 50px;
         font-weight: bolder;
+        padding:5  15px;
      }
