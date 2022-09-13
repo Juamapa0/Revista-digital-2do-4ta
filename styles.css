@@ -3,33 +3,37 @@ body {
     box-sizing: border-box;
     margin:0;
     padding:0;
+    line-height: 1.5;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
 }
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width:100%;
-    height: 100px;
-    /*position:absolute;*/
+    top:0;  
     position: fixed;
     background-color:black;
-    align-items: center; 
-    top:0;  
+    align-items: center;   
+    text-align: center; 
+    
         }
     .left {
         display: flex;             
-        margin-left:100px;
-       /* justify-content: center;*/
-        align-items: center;
+        margin-left:100px;      
+        /*align-items: center;*/
+        text-align: center;
+
     }
     .nombre {
         color:white;
         display:flex;
         justify-self:left;
-        align-items: center;
-        margin-left: 0;
+        /*align-items: center;*/
+        margin-left: 0 10px;
         font-size: 34px;
+        text-align: center;
     }
+    
     .logo-escuela {
         display:flex; 
         justify-content: center; 
@@ -45,7 +49,7 @@ header {
 
     .icono img {          
       align-self: center;
-      object-fit: contain;  
+      object-fit: contain; 
     
     } 
     
@@ -54,24 +58,26 @@ header {
         display: flex;
         justify-self:left;
         align-items: center;
-        font-weight: 500;
+        font-weight: 400;
         margin-left: 14px;
     }  
     
     header nav ul {
      list-style: none;
      display: flex;
-     justify-self: right; 
+     justify-self: left; 
      cursor: pointer;  
-     font-weight: bold; 
-     
-    }
+     font-weight: 600; 
+     font-size: 17px;
+     font-family: Roboto,sans-serif;  
+         }
 
     nav ul li a{
         color: white;
-        margin: 18px; 
+        margin: 18px ;
         list-style: none; 
-        text-decoration: none;   
+        text-decoration: none; 
+      
     }
 
     main {
@@ -80,7 +86,8 @@ header {
         align-items: center;
         align-self: center;       
         width:100%;
-        height: 100%;
+        height: 800px;
+        margin-top: 100px;
     }
     .main-figure{
         margin:0;
@@ -109,8 +116,7 @@ header {
         flex-direction: column;
         justify-content: center;
         width:100%;
-        height: 500px;
-        margin-top:100px;       
+        height: 100%;             
         background-color: lightpink;      
      }
      .title-tipo {
@@ -122,6 +128,7 @@ header {
         justify-items: center;
         text-align: center;
         font-weight: 900;
+       
      }
      .pages {
         display:flex;
@@ -168,7 +175,7 @@ header {
 
      .belleza h2 {
         font-size: 68px;
-        margin-top:100px;
+        margin-top:120px;
         display: flex;
         justify-content: center;
         justify-items: center;
@@ -186,9 +193,10 @@ header {
        
      }
      .belleza h4 {
-        font-size: 24px;
-        justify-self: left;  
+        font-size: 28px;
+        justify-self: center;  
         display:flex; 
+        text-align: center;
      }
 
      .belleza p {
