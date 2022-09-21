@@ -7,32 +7,29 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
 }
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width:100%;   
+    display: flex;
+    /*flex-direction: column;*/
+    width:100%; 
+    height: 70px;  
     top:0;  
     position: fixed;
     background-color:black;
     align-items: center;  
-    text-align: center;
-   
-    
+    text-align: center;       
             }
     .contenedor {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width:100%;    
+      display: flex;     
+      width:100%;
+      height: 70px;    
       top:0;  
       position: fixed;
       background-color:black;
       align-items: center;  
-     text-align: center;  
-    
+     text-align: center;      
     }        
     .left {
-        display: flex;             
-        margin-left:100px;     
-        text-align: center;
+      display: flex;             
+      flex-grow: 1;      
     }
     .left a {
       text-decoration: none;
@@ -53,18 +50,7 @@ header {
         align-items: center;
         margin-left: 2px;    
             }
-    .icono {
-        display:flex;    
-        justify-content: center;
-        justify-items: center; 
-        margin:10px;   
-              }
-
-    .icono img {          
-      align-self: center;
-      object-fit: contain; 
-    
-    } 
+  
     
     .escuela{
         color:white;
@@ -80,12 +66,12 @@ header {
     
     header nav ul {
      list-style: none;
-     display: flex;
-     justify-self: right; 
+     display: flex;     
      cursor: pointer;  
      font-weight: 600; 
      font-size: 17px;
-     font-family: Roboto,sans-serif;  
+     font-family: Roboto,sans-serif; 
+     padding-left: 0; 
          }
 
     nav ul li a{
@@ -102,30 +88,28 @@ header {
         align-items: center;
         align-self: center;       
         width:100%;
-        height: 800px;
-        margin-top: 100px;
+        height: 100vh;
+    
     }
     .main-figure{
         margin:0;
         padding:0;
-        width:100%;
-        height: 100%;
-    }
-
-    .main-figure img {
-        background-image:url('');
+        width:80%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        background-image: url('./discriminación.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size:contain;
-        width:100%;
-        height: 100%;
-    }
+        background-size: contain;
+        background-image:cover ;
+    }  
      .central{
-        color:black;
-        position:absolute;
-        top: 40%;
-        left:35%;
+        color:rgb(0, 12, 3);       
         font-size: 80px;
+        display: flex;      
+        align-self: center;            
      }
      main .tipos-discri {
         display:flex;
@@ -144,8 +128,7 @@ header {
         justify-content: center;
         justify-items: center;
         text-align: center;
-        font-weight: 900;
-       
+        font-weight: 900;       
      }
      .pages {
         display:flex;
@@ -156,8 +139,7 @@ header {
         list-style: none;
         width:100%;
         height: 80px;
-        
-     }
+             }
      .page li{
         display:flex;
         justify-content: center;
@@ -240,8 +222,7 @@ header {
 
      footer {      
       background-color: black;     
-      display:grid;
-      grid-template-columns: 1fr 1fr;
+      display:flex;      
       width: 100%;
       height: 70px;
       align-items: center; 
@@ -276,9 +257,9 @@ header {
         align-items: center;
         font-weight: 400;
         margin-left: 14px;
-        justify-content: center; 
-           
-           
+        justify-content: flex-end; 
+        flex-grow: 1;       
+      
      } 
      footer ul li a {
       list-style: none;
