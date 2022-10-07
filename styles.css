@@ -101,8 +101,7 @@ header {
         background-image: url('./discriminación.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
-        background-image:cover ;
+        background-size: cover;       
     }  
      .central{
         color:rgb(0, 12, 3);       
@@ -346,12 +345,12 @@ header {
     }
 
     @media (max-width:722px){
-     /* header{
-        height: 100px;
+      header{
+        height: 50px;
       }
       .contenedor{
-         height: 100px;
-      }*/
+         height: 50px;
+      }
       .nombre{
         display:flex;
         align-self: center;
@@ -373,10 +372,10 @@ header {
       }
       main .tipos-discri {
         width:100vw;
-        height:100vh;
-      }
+        height:100vh;    
+           }
       .title-tipo{
-         font-size: 28px;
+         font-size: 28px;        
       }
       .belleza h2 {
          font-size: 38px ;
@@ -399,6 +398,26 @@ header {
       }
       h1{
          display:none;
+      }
+     
+     /* ul .pages {
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         margin-top:8px;
+      }
+      .pages li{
+         display:flex;
+         text-align: center;
+         margin: 0;
+         padding: 0;
+            }
+            .pages li a{
+               margin:4px;
+               padding:0;
+            }*/
+      footer{
+         height: 50px;
       }
     }
    
