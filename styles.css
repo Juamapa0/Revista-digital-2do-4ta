@@ -279,18 +279,17 @@ header {
      }
    @media (max-width:1438px){
       .title-tipo{
-        font-size: 38px;
+        font-size: 58px;
         padding: 24px; 
       }
-      .pages{
-         
+      .pages{         
         flex-direction: column;
-        align-items: center;
-          
+        align-items: center; 
+        padding:0;         
               }
-      .pages li{
-         
+      .pages li{         
          margin:8px;
+         font-size: 20px;
       }        
       .pages li a{
          margin:32px;        
@@ -324,7 +323,7 @@ header {
       margin-bottom: 0;
      }
      .title-tipo{
-      font-size:28px ;
+      font-size:48px ;
      }
      .belleza h2 {
       font-size: 48px ;
@@ -375,10 +374,12 @@ header {
         height:100vh;    
            }
       .title-tipo{
-         font-size: 28px;        
+         font-size: 38px; 
+         line-height: 40px;       
       }
       .belleza h2 {
          font-size: 38px ;
+         line-height: 50px;
       }
       .belleza h3{
          font-size: 28px; 
@@ -399,25 +400,31 @@ header {
       h1{
          display:none;
       }
-     
-     /* ul .pages {
-         display:flex;
-         justify-content: center;
-         align-items: center;
-         margin-top:8px;
+      .tipos.discri {
+         line-height: 25px;
+         margin-bottom: 12px;
       }
-      .pages li{
-         display:flex;
-         text-align: center;
-         margin: 0;
-         padding: 0;
-            }
-            .pages li a{
-               margin:4px;
-               padding:0;
-            }*/
+      .pages{         
+         flex-direction: column;
+         align-items: center;
+         margin-top:40px;          
+               }
+     
+    
       footer{
          height: 50px;
       }
     }
-   
+    @media (max-width:570px){
+      .belleza h2{
+         font-size: 30px ; 
+      }
+    }
+    @media (max-width:414px){
+      .pages li {
+         margin:4px;
+      }
+      .pages li a{
+        
+      }
+    }
