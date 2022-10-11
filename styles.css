@@ -436,13 +436,15 @@ header {
       }
     }
     @media (max-width:414px){
+      .title-tipo {
+         font-size:26px;
+      }
+      .pages{
+         font-size: 16px;
+         height: 100px;
+      } 
       .pages li {
-         margin:4px;
-      }
-      /*.pages li a{
-        
-      }
-    }*/
-    main .tipos-discri{
-      flex-wrap: nowrap;
-    }
+         font-size: 14px;
+      }  
+   
+    
