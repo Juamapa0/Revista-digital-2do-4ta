@@ -217,6 +217,18 @@ header {
    font-size: 24px;
    font-weight: 500;
 }
+.ilustraciones {
+   display:grid;
+   grid-template-columns:1fr;
+
+   }
+   .ilustraciones figure {
+      margin-top: 150px;
+   }
+.ilustraciones figure img {    
+   align-items: center;
+   object-fit: cover;
+}
 
      footer {      
       background-color: black;     
@@ -341,6 +353,9 @@ header {
       .esnaola{
       display:none;
      }
+     .racismo h4 {
+      line-height: 1.2;
+     }
     }
 
     @media (max-width:722px){
@@ -424,7 +439,7 @@ header {
       .pages li {
          margin:4px;
       }
-      .pages li a{
+      /*.pages li a{
         
       }
-    }
+    }*/
