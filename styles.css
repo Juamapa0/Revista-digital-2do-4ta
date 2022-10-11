@@ -446,5 +446,9 @@ header {
       .pages li {
          font-size: 14px;
       }  
-   
-    
+      @media (max-width:360px){
+         .pages li {
+            font-size: 10px;
+         }  
+      }
+ 
