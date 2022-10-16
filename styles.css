@@ -424,7 +424,24 @@ header {
          align-items: center;
          margin-top:40px;          
                }
-     
+               .ilustraciones {
+                  display:grid;
+                  grid-template-columns:repeat 1fr; 
+                  align-content: center;
+                  justify-content: center;     
+                  }
+                  .ilustraciones figure {
+                     margin:0,
+                     align-content: center;
+                     justify-content: center;
+                  }
+               .ilustraciones figure img {    
+                  align-items: center;
+                  object-fit: cover;
+                  height: 570px;
+                  align-content: center;
+                  justify-content: center;
+               }
     
       footer{
          height: 50px;
@@ -445,14 +462,15 @@ header {
       } 
       .pages li {
          font-size: 14px;
-      }  
+      } 
+      .ilustraciones figure img {   
+         height: 500px;
+      }
+   } 
       @media (max-width:360px){
          .pages li {
             font-size: 10px;
-         }
-         .belleza {
-           
-         }
+         }       
          .belleza h2{
             font-size:28px ;
             line-height: 1.2;
@@ -464,6 +482,19 @@ header {
          .belleza h3{
             font-size:24px ;
             line-height: 1.2;
+         }
+         .ilustraciones {
+            align-content: center;
+            justify-content: center;
          } 
+         .ilustraciones figure {
+            margin:0;
+            display:grid;
+            align-content: center;
+            justify-content: center;
+         }
+         .ilustraciones figure img {   
+            height: 340px;
+         }
       }
  
