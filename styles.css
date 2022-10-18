@@ -400,7 +400,7 @@ header {
       }
       .belleza h2 {
          font-size: 38px ;
-         line-height: 50px;
+         line-height: 1.2;
       }
       .belleza h3{
          font-size: 28px; 
@@ -501,6 +501,12 @@ header {
          }
          .ilustraciones figure img {   
             height: 340px;
+         }
+         .racismo {
+            width:100%;
+         }
+         .racismo iframe {
+            width:100%;
          }
       }
  
